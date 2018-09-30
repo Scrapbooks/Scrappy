@@ -1,0 +1,162 @@
+/*External Style Sheet - Let's Get Scrapping*/
+
+* {box-sizing: border box;}
+
+#wrapper {margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		min-width: 700px;
+		background-color: #000000; }
+		
+body {background-color: #CCCCCC;
+	color: #4A4A4A;
+	font-family:Arial, Verdana, sans-serif; 
+	}
+header{background-color: #000000;
+	color: #000000;
+	text-align: right;
+	background-image: url(css_sprites.gif);
+	background-repeat: no-repeat;
+	}
+h1 {line-height: 150%;
+	text-indent: 1em;
+	margin-bottom: 0;
+	font-size: 4em;
+	padding: 0.2em;
+	}
+h2 {color: #000000;}
+nav {font-weight: bold;
+	float: left;
+	width: 150px;
+	padding: 4px;
+	letter-spacing: 0.1em;
+	background-color: #000000;
+	}
+nav a { text-decoration: none; 
+         display: block;
+	     padding: 30px;    
+         background-color: #000000;     
+	     border-bottom: 1px solid #999999; 	
+         background-image: url(ribbon.gif);
+         background-repeat: no-repeat;
+         background-position: left 0;		 
+}
+nav a {text-decoration: none;}
+nav a:link {color: #FFFFFF;}
+nav a:visited {color: #999999;}
+nav a:hover {color: #FF6699;}
+
+ul{list-style-type: none;}
+li { display: inline-block;
+	width: 225px;
+	padding-bottom: 10px;
+	margin: 10px;
+	background-color: DB7093;
+	text-align: center;
+	font-style: italic;
+	font-family: Georgia, serif;
+	color: #666666;}
+	
+main {margin-left: 158px;
+	padding-left: 2em;
+	padding-right: 2em;
+	background-color: #FFFFFF;
+	border: 1px solid #AEC3E3;
+}
+main dt {color: #000000;}
+aside {float: right;
+	width: 200px;
+	background-color: #FFCCCC;
+	padding: 10px;
+	text-align: center;
+}
+footer {text-align: center;
+		background-color: #999999;
+		font-size: .70em;
+		font-style: italic;
+		padding: 1em;
+		margin-left: 158px;
+		}
+.clearright{clear: right;}
+.altrow {background-color: #FFCCCC;}
+#dcm {float: left;
+	margin: 5px 5px 5px 10px;}
+#gallery { position: relative; }
+#gallery ul { width: 250px; 
+             list-style-type: none; }
+#gallery li { display: grid;           
+			  padding: 10px; }
+#gallery img { border-style: none; }
+#gallery a { text-decoration: none; 
+             color: #333; 
+			 font-style: italic; }
+#gallery span { display: none; }    
+#gallery a:hover span { display: block; 
+                        position: absolute;
+					    top: 10px; 
+						left: 300px; 
+						text-align: center; }
+#mobile {display: none;}
+#desktop {display: inline;}
+@media only screen and (max-width: 1024px) {
+	body {margin: 0;
+		padding: 0;
+		background-color: #FFFFFF;
+		background-image: none;}
+	#wrapper {width: auto;
+		min-width: 0;
+		margin: 0;}
+	h1 {margin: 0;
+		font-size: 1.8em;
+		line-height: 200%; }
+	nav {float: none;
+		padding: 0;
+		width: auto;}
+	nav li {display: inline-block;}
+	nav a {padding: 1em;
+		font-size: 1em;}
+	nav ul {text-align: centered;
+		padding: 1em;
+		margin: 0;}
+	main {font-size: 90%;
+		margin: 0;
+		padding-left: 2em;}
+	footer {margin: 0;}
+}
+
+@media only screen and (max-width: 768px) {
+	header {background-image: url(lilfish.gif)}
+	h1 {font-size: 1.5em;
+		line-height: 120%;}
+	nav a {display: block;
+		padding: 0.2em;
+		font-size: 1em;
+		border-bottom: 1px #330000;}
+	nav li {display: block;}
+	nav ul {text-align: left;}
+	main {padding: 1em;}
+	#category {text-shadow: none;}
+	#mobile {display: inline;}
+	#desktop {display: none;}
+}
+table { margin: 1em;
+		border: 2px #000066 solid;
+		border-collapse: collapse;
+}
+th, td { padding: .5em;
+		 border: 1px #000066 solid;
+}
+label { float: left;
+		display: block;
+		text-align: right;
+		width: 8em;
+		padding-right: 1em;
+}
+input, textarea { display: block;
+				margin-bottom: 1em;
+}
+
+header, nav, main, footer {display: block;}
+		
+			
+	
