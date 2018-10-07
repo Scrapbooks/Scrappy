@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+<title>Scrapbook</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Scrapbook.css">
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1>Subscribe</h1>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="fablayout.html">Fabulous Layouts</a>
+<a href="techandtut.html">Technique & Tutorials</a>
+<a href="product.html">Featured Products</a>
+<a href="ephemera.html">Ephemera & Extras</a>
+<a href="subscribe.html">Subscribe</a>
+</nav>
+<main>
+<h3>Subscribe to Our Newsletter</h3>
+<p> When you subscribe to our newsletter, you will receive expert
+advice on techniques, what's new in the scrapping world, and scrapping 
+conferences and events - right in your inbox.</p>
+<script>
+function validateForm() {
+if (document.forms[0].userName.value == "" ) {
+    alert("Name field is required.");
+    return false;
+} // end if
+if (document.forms[0].userEmail.value == "") {
+
+    alert("Please enter a valid email.");
+    return false;
+	}
+ // end if
+ if (!document.forms[0].userEmail.value.includes("@")) {
+	alert("A valid email contains '@'");
+	return false;
+	}
+return true;
+} // end function validateForm
+</script>
+<form method="post"
+      action="mailto:s0975095@student.mcckc.edu"
+      onsubmit="return validateForm();">
+<label for="userName">Name:</label>
+<input type="text" name="userName" id="userName">
+<label for="userEmail">Email:</label>
+<input type="text" name="userEmail" id="userEmail"><br>
+<select size="1" name="Areas of Interest" id="interest">
+	<option>Select Your Top Area of Interest:</option>
+	<option value="Products">Products</option>
+	<option value="Techniques">Techniques</option>
+	<option value="Ephemera">Ephemera</option>
+</select><br><br>
+<select size="1" name="Skill Level" id="level">
+	<option>What is your skill level?</option>
+	<option value="Beginner">Beginner</option>
+	<option value="Intermediate">Intermediate</option>
+	<option value="Advanced">Advanced</option>
+</select><br><br>
+<label for="comments">Comments:</label><br>
+<textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+<input type="submit" value="Sign Up Now" id="submit">
+</form>
+
+</main>
+<footer>
+<div>
+		Copyright &copy; 2018 Marcy Messer<br>
+		Marcy Messer<br>
+		<a href="mailto:s0975095@student.mcckc.edu"> s0975095@student.mcckc.edu</a>
+</div>
+</footer>
+</body>
+</html>
