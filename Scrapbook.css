@@ -70,7 +70,7 @@ footer {text-align: center;
 		font-style: italic;
 		padding: 1em;
 		margin-left: 158px;
-		}
+	}
 .clearright{clear: right;}
 .altrow {background-color: #FFCCCC;}
 #dcm {float: left;
@@ -78,20 +78,33 @@ footer {text-align: center;
 #dcm1 {float: right;
 	margin: 5px 5px 5px 10px;}
 #gallery { position: relative; }
+figure { position: absolute;
+         left: 280px;
+		 text-align: center;
+		 opacity: .25; }
 #gallery ul { width: 250px; 
              list-style-type: none; }
 #gallery li { display: grid;           
 			  padding: 10px; }
+#gallery li { display: inline; 
+              float: left;
+padding: 10px;}
 #gallery img { border-style: none; }
 #gallery a { text-decoration: none; 
              color: #333; 
 			 font-style: italic; }
-#gallery span { display: none; }    
-#gallery a:hover span { display: block; 
-                        position: absolute;
-					    top: 10px; 
-						left: 300px; 
-						text-align: center; }
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+                transition: opacity 3s ease-in-out; 
+} 
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 320px;
+                        text-align: center; 
+						opacity: 1;
+}
+
 #mobile {display: none;}
 #desktop {display: inline;}
 @media only screen and (max-width: 1024px) {
